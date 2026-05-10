@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Devicons for skill icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+</head>
+<body>
+
+  <!-- = NAVIGATION = -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>DEV</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <!-- Dark/Light Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon sun">☀</span>
+        <span class="toggle-icon moon">☽</span>
+      </button>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- = HERO / HOME = -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="16x9.png" alt="Developer silhouette" class="hero-photo" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Available for Hire &nbsp;·&nbsp; 2026</p>
+      <h1 class="hero-name reveal">
+        <span class="name-line">MARK</span>
+        <span class="name-line italic">ANTHONY V.</span>
+        <span class="name-line">VERGARA</span>
+      </h1>
+      <div class="hero-meta reveal">
+        <span class="role-tag">Web Developer</span>
+        <span class="divider">—</span>
+        <p class="tagline">I build the web that<br><em>refuses to be ordinary.</em></p>
+      </div>
+      <a href="#projects" class="cta-btn reveal">See My Work <span class="arrow">↓</span></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- = 01 ABOUT ME = -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a passionate web developer from <strong>Naga City, Bicol</strong> — crafting fast, accessible, and visually compelling digital experiences.
+          </p>
+          <p>
+            Currently pursuing my degree in Information Technology, I thrive at the intersection of clean code and bold design. I believe every pixel has a purpose and every line of code tells a story.
+          </p>
+          <p>
+            When I'm not coding, you'll find me fixing computer hardware/software, exploring videography/photography, playing guitar, or tinkering with side projects that challenge me to grow.
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-number">2+</span>
+              <span class="fact-label">Ongoing Projects</span>
+            </div>
+            <div class="fact">
+              <span class="fact-number">3+</span>
+              <span class="fact-label">Years Learning</span>
+            </div>
+            <div class="fact">
+              <span class="fact-number">∞</span>
+              <span class="fact-label">Lines of Code</span>
+            </div>
+          </div>
+          <a href="Resume.pdf" download="Resume_Vergara.pdf" class="download-resume-btn reveal">
+            ↓ &nbsp;Download Resume
+          </a>
+        </div>
+        <div class="about-edu reveal">
+          <h3>Education & Achievements</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2023 – Present</span>
+                <h4>BS Information Technology</h4>
+                <p>STI College - Naga</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <h4>Java Fundamentals Certificate</h4>
+                <p>Completed fundamentals course</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2022</span>
+                <h4>ROTC Graduate - Private (RES) PA</h4>
+                <p>Completed Military Science 1, 2, 31, and 32</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- = 02 SKILLS = -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Card -->
+        <div class="skill-card reveal" data-level="95">
+          <i class="devicon-html5-plain colored"></i>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="88">
+          <i class="devicon-css3-plain colored"></i>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="80">
+          <i class="devicon-javascript-plain colored"></i>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="75">
+          <i class="devicon-vscode-plain colored"></i>
+          <span class="skill-name">VS Code</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="72">
+            <i class="devicon-androidstudio-plain"></i>
+          <span class="skill-name">Android Studio</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="95">
+          <i class="devicon-aftereffects-plain colored"></i>
+          <span class="skill-name">Adobe After Effects</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50"></div>
+          </div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="85">
+          <i class="devicon-photoshop-plain colored"></i>
+          <span class="skill-name">Adobe Photoshop</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="78">
+          <i class="devicon-figma-plain colored"></i>
+          <span class="skill-name">Figma</span>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- = 03 PROJECTS = -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <span class="project-num">Ongoing</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">Live ↗</a>
+              <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">My Portfolio</h3>
+            <p class="project-desc">My own fully responsive web focused on performance and clean UI.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder p2">
+              <span class="project-num">Ongoing</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">Live ↗</a>
+              <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3 class="project-title">VertexIS</h3>
+            <p class="project-desc"> An Ordering and Inventory System with Predictive Demand Analytics for Marsh Bites, Legazpi City</p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder p3">
+              <span class="project-num">Ongoing</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">Live ↗</a>
+              <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JAVASCRIPT</span>
+            </div>
+            <h3 class="project-title">ARF Portal</h3>
+            <p class="project-desc">A Web-Based Veterinary Appointment and Service Management System</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- = 04 CONTACT = -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p class="contact-lead">Have a project in mind?<br><em>Let's build something great.</em></p>
+          <div class="social-links">
+            <a href="https://github.com/moorkymoork" target="_blank" class="social-btn">
+              <i class="devicon-github-original"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mark-anthony-vergara/" target="_blank" class="social-btn">
+              <i class="devicon-linkedin-plain colored"></i> LinkedIn
+            </a>
+          </div>
+          <p class="contact-email">📧 moorkymoork@gmail.com</p>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="yourname@gmail.com" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Message <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- = FOOTER = -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built with Passion by <strong>Mark Anthony Villanueva Vergara</strong> · 2026</p>
+      <a href="#home" class="back-to-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
